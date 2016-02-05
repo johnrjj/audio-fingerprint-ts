@@ -8,18 +8,15 @@
     "build": "npm run clean && npm run build:webpack",
     "clean": "rimraf build",
     "start": "node dev_server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --require test/compile  test/**/*.spec.ts"
   },
   "author": "George Lee",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/keokilee/react-typescript-boilerplate.git"
+    "url": "https://github.com/johnrjj/audio-fingerprint-ts.git"
   },
-  "bugs": {
-    "url": "https://github.com/keokilee/react-typescript-boilerplate/issues"
-  },
-  "homepage": "https://github.com/keokilee/react-typescript-boilerplate",
+  "homepage": "https://github.com/johnrjj/audio-fingerprint-ts",
   "devDependencies": {
     "babel-core": "^6.4.5",
     "babel-loader": "^6.2.1",
@@ -32,6 +29,7 @@
     "react-transform-hmr": "^1.0.1",
     "redbox-react": "^1.2.0",
     "rimraf": "^2.5.1",
+    "ts-node": "^0.5.5",
     "tslint": "^3.3.0",
     "tslint-loader": "^2.1.0",
     "webpack": "^1.12.12",
